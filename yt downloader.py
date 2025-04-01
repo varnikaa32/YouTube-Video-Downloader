@@ -8,7 +8,7 @@ def display_text():
     button.config(state="disabled")
     label.config(text="Downloading")
     def vid_download():
-        ydl_opts = {'outtmpl': 'C:/Users/varni/Desktop/%(title)s.%(ext)s',
+        ydl_opts = {'outtmpl': 'file directory',
                     'format': 'bestvideo+bestaudio/best'}
         try:
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
